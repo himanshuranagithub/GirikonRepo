@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>AccountHandler5timesError</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>AccountHandler5timesError</shortDescription>
+        <value>Maximum allowed  update of this field  5 times, you cannot update anymore</value>
+    </labels>
+    <labels>
+        <fullName>Opp_Error_Msg</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Opp Error Msg</shortDescription>
+        <value>opportunity record cannot be created</value>
+    </labels>
+    <labels>
+        <fullName>Welcomemessage</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Welcomemessage</shortDescription>
+        <value>Everyday in everyway I am getting better and better!
+Life is full of joy and happiness</value>
+    </labels>
+</CustomLabels>

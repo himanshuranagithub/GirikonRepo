@@ -1,0 +1,19 @@
+<!--
+  @description       : 
+  @author            : ChangeMeIn@UserSettingsUnder.SFDoc
+  @group             : 
+  @last modified on  : 01-06-2024
+  @last modified by  : ChangeMeIn@UserSettingsUnder.SFDoc
+-->
+<template>
+    <lightning-card title="Child LwcRef">
+        <lightning-input type='checkbox' label='Happy' onchange={handleOnChange} lwc:ref="Happy">
+        </lightning-input>
+        <lightning-input type='text' label='Name' onchange={handleOnChange} lwc:ref="Name">
+        </lightning-input>
+        <lightning-button variant='brand' label='Save'  onclick={handleClick} class='slds-grid slds-var-m-top_small'>
+        </lightning-button>
+        
+    </lightning-card>
+    
+</template>

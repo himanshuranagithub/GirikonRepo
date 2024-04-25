@@ -1,0 +1,11 @@
+Dear {!Opportunity.OwnerFullName},
+You've received high value opportunities value
+
+Opportunity name:{!Opportunity.Name}
+Amount: {!Opportunity.Amount}
+
+
+
+Regards,
+Naveenkumar J
+Salesforce Developer

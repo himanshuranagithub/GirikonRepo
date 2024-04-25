@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notify Mgr on the high value Opportunity</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Notify MGR</name>
+    <style>none</style>
+    <subject>High Value Received</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

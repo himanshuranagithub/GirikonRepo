@@ -1,0 +1,12 @@
+Dear {!Opportunity.Name},
+
+Pay your premium last three  days left to  pay.
+
+
+Premium end date:{!Opportunity.CloseDate}
+
+
+
+Regards,
+Naveenkumar J
+Salesforce Admin& Developer.

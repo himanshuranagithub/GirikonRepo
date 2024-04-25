@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <compactLayouts>
+        <fullName>Position_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Status__c</fields>
+        <fields>HireBy__c</fields>
+        <fields>Job_Level__c</fields>
+        <label>Position Compact Layout</label>
+    </compactLayouts>
+    <recordTypes>
+        <fullName>Master_Position</fullName>
+        <active>true</active>
+        <description>Default</description>
+        <label>Master Position</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Non_Technical_Position</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>Position_Compact_Layout</compactLayoutAssignment>
+        <label>Non Technical Position</label>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Technical_Position</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>Position_Compact_Layout</compactLayoutAssignment>
+        <label>Technical Position</label>
+    </recordTypes>
+    <validationRules>
+        <fullName>Close_Date_To_Specify_if_Status_is_close</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF(AND( ISBLANK( Close_Date__c),
+      OR(ISPICKVAL( Status__c , &apos;Closed-Filled&apos;), 
+	ISPICKVAL( Status__c , &apos;Closed-Not Filled&apos;),
+          ISPICKVAL( Status__c , &apos;Closed-Not Approved&apos;))),
+   True,False)</errorConditionFormula>
+        <errorMessage>Close Date is not specified</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Min_Pay_Max_Pay</fullName>
+        <active>true</active>
+        <errorConditionFormula>Min_Pay__c &gt; Max_PAy__c</errorConditionFormula>
+        <errorMessage>Min pay should not be greater than the Max pay</errorMessage>
+    </validationRules>
+</CustomObject>
